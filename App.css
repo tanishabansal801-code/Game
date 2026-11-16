@@ -1,0 +1,24 @@
+:root{--pink:#f0a9cb;--pale:#f8dce9;--ink:#1a101e;--muted:#d6b9ca}
+.app-shell{height:100dvh;max-width:680px;margin:auto;background:#170f1e;display:flex;flex-direction:column;padding:0 12px}
+.topbar{height:62px;display:flex;align-items:center;justify-content:space-between;z-index:5;flex-shrink:0}
+.brand{display:flex;align-items:center;gap:9px;font-family:Georgia,serif;font-size:14px;letter-spacing:1.8px}.brand-mark{font-size:26px;color:var(--pink)}.brand b{color:var(--pink)}.brand small{display:block;font:8px Arial;letter-spacing:2.5px;color:#b99caf;margin-top:3px}
+.coin-pill{border:1px solid #74516b;background:#2c1d30;border-radius:20px;padding:8px 13px;color:#f7d99a;font-size:13px}
+.game-frame{position:relative;flex:1;min-height:0;overflow:hidden;border:1px solid #553b54;border-radius:18px;background:#24182b}
+.phaser-host{position:absolute;inset:0}.phaser-host canvas{display:block;width:100%!important;height:100%!important}
+.overlay{position:absolute;z-index:2;inset:0;padding:22px;display:flex;flex-direction:column;justify-content:center;background:linear-gradient(90deg,rgba(23,15,30,.94),rgba(23,15,30,.66) 56%,rgba(23,15,30,.08))}
+.eyebrow{font-size:9px;letter-spacing:3px;color:var(--pink);font-weight:700}
+h1{font:clamp(42px,10vw,68px)/.95 Georgia,serif;margin:13px 0;color:#fff;letter-spacing:-2px}h1 em{color:var(--pink);font-weight:400}
+.overlay p{font-size:13px;line-height:1.55;color:#e2cddd;max-width:250px}
+.primary,.ghost{border:0;border-radius:10px;padding:14px 16px;font-size:10px;letter-spacing:1.3px;font-weight:800;cursor:pointer}
+.primary{background:linear-gradient(110deg,#f1a8c9,#c77aa8);color:#291426;box-shadow:0 7px 22px #d67eaa33}.primary span{float:right;font-size:17px;margin-top:-4px}.big{max-width:260px;margin-top:22px}.ghost{background:transparent;color:#f2d5e4;border:1px solid #79556d;max-width:260px;margin-top:9px}
+.dress-panel{justify-content:flex-start;background:linear-gradient(90deg,rgba(23,15,30,.96),rgba(23,15,30,.83) 72%,rgba(23,15,30,.2));padding:14px;gap:10px}
+.challenge-card{display:flex;justify-content:space-between;align-items:center;background:#291c30dd;border:1px solid #815774;border-radius:13px;padding:11px 13px;max-width:390px}
+.challenge-card small,.score-row small{font-size:8px;letter-spacing:2px;color:var(--pink)}.challenge-card h2{font:22px Georgia;margin:5px 0}.challenge-card p{margin:0;font-size:10px}.timer{font-size:20px;color:#f8d8e8;font-weight:800}
+.dress-controls{margin-top:auto;max-width:430px;background:#211627ed;border:1px solid #69475e;border-radius:15px;padding:11px}
+.category-tabs{display:flex;gap:5px}.category-tabs button{flex:1;border:1px solid #68485f;background:#302039;color:#d9bfd0;border-radius:8px;padding:9px 2px;text-transform:capitalize;font-size:10px}.category-tabs button.active{background:#eaa4c5;color:#271522}
+.item-list{display:grid;grid-template-columns:repeat(2,1fr);gap:6px;margin:9px 0}.item{display:flex;align-items:center;gap:7px;background:#34233a;border:1px solid #62465f;border-radius:8px;padding:8px;color:#f5e3ee;text-align:left;font-size:10px}.item.selected{border-color:#f2b2d0;background:#4b2d47}.item small{margin-left:auto;color:#f2d6a3;font-size:8px}.swatch{width:17px;height:17px;border-radius:50%;border:1px solid #ffffff88;flex-shrink:0}.submit-look{width:100%;padding:12px}
+.wardrobe-panel{background:rgba(23,15,30,.9)}.wardrobe-panel h2{font:34px Georgia;margin:0}.wardrobe-stats{padding:13px;background:#39253c;border-radius:10px;margin:15px 0;color:#f5d5e5;font-size:12px}.wardrobe-stats span{float:right;color:#c9aabd}
+.runway-panel,.results-panel{align-items:center;text-align:center;background:rgba(23,15,30,.78)}.runway-panel p,.results-panel p{max-width:290px}.loading-line{height:4px;width:180px;background:#5a3a55;border-radius:8px;overflow:hidden;margin-top:18px}.loading-line i{display:block;height:100%;width:40%;background:#f2a9ca;animation:load 1.3s infinite}@keyframes load{from{transform:translateX(-100%)}to{transform:translateX(350%)}}
+.score-row{display:flex;gap:28px;margin:20px 0}.score-row div{display:flex;flex-direction:column;gap:5px}.score-row strong{font:44px Georgia;color:#f2b5d0}.reward{color:#f7d99a;font-weight:800;letter-spacing:2px;margin:5px 0 12px}
+footer{height:27px;display:flex;justify-content:space-between;align-items:center;font-size:8px;letter-spacing:2px;color:#9f8098;flex-shrink:0}
+@media(max-height:650px){.topbar{height:48px}.dress-panel{padding:8px}.challenge-card{padding:7px}.item-list{margin:5px 0}.item{padding:5px}.category-tabs button{padding:6px}.submit-look{padding:9px}.overlay{padding:15px}}
